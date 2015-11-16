@@ -10,12 +10,12 @@
       {
         "title": "gloves",
         "description": "This is the text for a snowboard glove",
-        "filename": ""
+        "filename": null
       },
       {
         "title": "bindings",
         "description": "put your feet in em",
-        "filename": ""
+        "filename": null
       }
 
     ]
@@ -26,17 +26,17 @@
       {
         "title": "ball",
         "description": "description text",
-        "filename": ""
+        "filename": null
       },
       {
        "title": "gloves",
         "description": "This is the text for a football glove",
-        "filename": ""
+        "filename": null
       },
       {
         "title": "pants",
         "description": "more description text",
-        "filename": ""
+        "filename": null
       }
     ]
   },
@@ -46,17 +46,17 @@
       {
         "title": "board",
         "description": "You'll need one of these to go surfing",
-        "filename": ""
+        "filename": null
       },
       {
         "title": "wetsuit",
         "description": "brrr! this is for the cold water surfers",
-        "filename": ""
+        "filename": null
       },
       {
         "title": "wax",
         "description": "Make sure it goes on the top of the board!",
-        "filename": ""
+        "filename": null
       }
     ]
   },
@@ -66,17 +66,17 @@
       {
         "title": "harness",
           "description": "keeps you attached to the rope",
-        "filename": ""
+        "filename": null
       },
       {
         "title": "rope",
         "description": "keeps you attached to the wall",
-        "filename": ""
+        "filename": null
       },
       {
         "title": "chalk",
         "description": "no more sweaty hands!",
-        "filename": ""
+        "filename": null
       }
     ]
   }
