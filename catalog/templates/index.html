@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+{% block title %}Home{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block body %}
+    <div class="container body-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class='content-left'>
+                    <h2>Categories:</h2>
+                    {% for i in wholeCatalog %}
+                        <div class='lists'>
+                            <a href='{{url_for('display_all_items_per_category', catalog_name  = i.name) }}'>{{i.name | title}}</a>
+                        </div>
+                    {% endfor %}
+                    {% if login_status == True %}
+                        <div class="edit_buttons">
+                            <form action="{{url_for('add_new_catalog')}}"  name='editButton'>
+                                <input class="myButton" type='submit' value='Add Category' >
+                            </form>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class='content-right'>
+                    <h2>Latest:</h2>
+                    {% for item in items %}
+                    <div class='lists'>
+                        <a href='{{url_for('display_item_description', catalog_name  = item.name, item_id = item.id ) }}'>
+                                    {{item.title | title}} ({{item.name | title}})</a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

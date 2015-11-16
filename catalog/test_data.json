@@ -1,0 +1,86 @@
+[
+  {
+    "catagory_name": "snowboard",
+    "items": [
+      {
+        "title": "googles",
+        "description": "description text",
+        "filename": "snowboard.jpg"
+      },
+      {
+        "title": "gloves",
+        "description": "This is the text for a snowboard glove",
+        "filename": ""
+      },
+      {
+        "title": "bindings",
+        "description": "put your feet in em",
+        "filename": ""
+      }
+
+    ]
+  },
+  {
+    "catagory_name": "football",
+    "items": [
+      {
+        "title": "ball",
+        "description": "description text",
+        "filename": ""
+      },
+      {
+       "title": "gloves",
+        "description": "This is the text for a football glove",
+        "filename": ""
+      },
+      {
+        "title": "pants",
+        "description": "more description text",
+        "filename": ""
+      }
+    ]
+  },
+  {
+    "catagory_name": "surfing",
+    "items": [
+      {
+        "title": "board",
+        "description": "You'll need one of these to go surfing",
+        "filename": ""
+      },
+      {
+        "title": "wetsuit",
+        "description": "brrr! this is for the cold water surfers",
+        "filename": ""
+      },
+      {
+        "title": "wax",
+        "description": "Make sure it goes on the top of the board!",
+        "filename": ""
+      }
+    ]
+  },
+  {
+    "catagory_name": "rock climbing",
+    "items": [
+      {
+        "title": "harness",
+          "description": "keeps you attached to the rope",
+        "filename": ""
+      },
+      {
+        "title": "rope",
+        "description": "keeps you attached to the wall",
+        "filename": ""
+      },
+      {
+        "title": "chalk",
+        "description": "no more sweaty hands!",
+        "filename": ""
+      }
+    ]
+  }
+]
+
+
+

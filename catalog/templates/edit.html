@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block title %}Edit {{ item_to_update.title }}?{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block body %}
+    <div class="container body-container">
+        <div class="row">
+            <div class="col-md-12">
+            <form action="{{url_for('edit_item', item_id = item_to_update.id)}}" method = 'POST' name='editButton' enctype=multipart/form-data>
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                <h2> Edit Item </h2>
+                <h3>Title:</h3>
+                <input type='text' size='30' placeholder="{{item_to_update.title}}" name='title'>
+                <h3>Description:</h3>
+                <input type='text' size='30' placeholder="{{item_to_update.description}}" name='description'>
+                <h3>Category:</h3>
+                <div class="category_select">
+                    <select name="categories" width="30px">
+                        {% for option in option_list %}
+                            <option value="{{option.id}}" {% if option.id == item_to_update.category_id %}selected = "selected" {% endif %}>
+                        {{option.name | title}}</option>
+
+                        {% endfor %}
+                    </select>
+                </div>
+                <input type='file' name='file'>
+                <input type='submit' value='Submit'>
+            </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

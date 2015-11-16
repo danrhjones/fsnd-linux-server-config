@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block title %}Add new Category{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block body %}
+    <div class="container body-container">
+        <div class="row">
+            <div class="col-md-12">
+                <form action="{{url_for('add_new_catalog')}}" method = 'POST' name='editButton' enctype=multipart/form-data>
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                    <h2> Edit Menu Item </h2>
+                    <h3>New Category:</h3>
+                    <input type='text' size='30' placeholder="enter new category" name='title'>
+                    <input type='submit' value='Submit'>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

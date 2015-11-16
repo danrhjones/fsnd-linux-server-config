@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block title %}Delete {{ item.title }}?{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+{% block body %}
+    <div class="container body-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Delete Item</h2>
+                <h3>Are you sure you want to delete?</h3>
+                <form action="{{url_for('delete_item', item_id = item.id)}}" method = 'POST' name='editButton'>
+                    <input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+                    <input type='submit' value='Confirm'>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
