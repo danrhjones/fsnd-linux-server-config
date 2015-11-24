@@ -74,3 +74,4 @@ The password is:  p455w0rd
 - http://stackoverflow.com/questions/31168606/internal-server-error-target-wsgi-script-cannot-be-loaded-as-python-module-and
 - http://stackoverflow.com/questions/26080872/secret-key-not-set-in-flask-session
 - http://unix.stackexchange.com/questions/7283/how-can-i-make-a-user-able-to-log-in-with-ssh-keys-but-not-with-a-password
+- https://www.digitalocean.com/community/tutorials/how-to-install-nagios-4-and-monitor-your-servers-on-ubuntu-14-04
